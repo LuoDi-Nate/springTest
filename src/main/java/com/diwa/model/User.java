@@ -11,20 +11,6 @@ public class User {
 	private boolean gender;
 	private Date time1;
 	private Timestamp time2;
-	
-	
-	public Date getTime1() {
-		return time1;
-	}
-	public void setTime1(Date time1) {
-		this.time1 = time1;
-	}
-	public Timestamp getTime2() {
-		return time2;
-	}
-	public void setTime2(Timestamp time2) {
-		this.time2 = time2;
-	}
 	public String getName() {
 		return name;
 	}
@@ -49,12 +35,24 @@ public class User {
 	public void setPasswd(String passwd) {
 		this.passwd = passwd;
 	}
-	public boolean isGender() {
+	public boolean getGender() {
 		return gender;
 	}
 	public void setGender(boolean gender) {
 		this.gender = gender;
 	}
+	public Date getTime1() {
+		return time1;
+	}
+	public void setTime1(Date time1) {
+		this.time1 = time1;
+	}
+	public Timestamp getTime2() {
+		return time2;
+	}
+	public void setTime2(Timestamp time2) {
+		this.time2 = time2;
+	}
 	
-	
+		
 }
