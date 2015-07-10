@@ -6,6 +6,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+import org.springframework.beans.BeanUtils;
 import org.springframework.util.Assert;
 
 import com.diwa.model.TModelA;
@@ -54,9 +55,7 @@ public class OwnCopy {
 
 			String methodName = sourceName.substring(0, 1).toUpperCase()
 					+ sourceName.substring(1);
-			Method getMethod = sourceClass.getMethod("get" + methodName); // 拿到set方法
-																			// 如果get方法不是标准驼峰
-																			// 自己玩去吧
+			Method getMethod = sourceClass.getMethod("get" + methodName); // 拿到set方法 如果get方法不是标准驼峰  自己玩去吧
 
 			Object value = getMethod.invoke(source); // 执行source的get 拿到value
 
